@@ -11,7 +11,7 @@
   white-space: nowrap;
   padding: 2px 5px;
   color: var(--el-pagination-font-color);
-  font-weight: bold;
+  // font-weight: bold;
   @include utils-clearfix;
 
   span:not([class*='suffix']),
@@ -69,6 +69,7 @@
 
   .btn-prev,
   .btn-next {
+    vertical-align: -webkit-baseline-middle;
     background: center center no-repeat;
     background-size: 16px;
     background-color: var(--el-pagination-background-color);
@@ -281,7 +282,9 @@
     cursor: pointer;
     box-sizing: border-box;
     text-align: center;
-    margin: 1px;
+    margin: 1px 6px;
+
+    color: #888888;
 
     &.btn-quicknext,
     &.btn-quickprev {
@@ -314,7 +317,9 @@
     }
 
     &.active {
-      color: var(--el-pagination-hover-color);
+      color: var(--el-color-white);
+      background: var(--el-color-primary);
+      border-radius: var(--el-pagination-border-radius);
       cursor: default;
     }
   }
