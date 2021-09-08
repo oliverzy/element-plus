@@ -34,7 +34,7 @@ $--colors: map.deep-merge(
       'base': #ff525d,
     ),
     'info': (
-      'base': #3a64ff,
+      'base': #2d2d2d,
     ),
   ),
   $--colors
@@ -307,7 +307,7 @@ $--radio-bordered-input-width: map.merge(
 $--select: () !default;
 $--select: map.merge(
   (
-    'border-color-hover': var(--el-border-color-hover),
+    'border-color-hover': var(--el-color-primary),
     'disabled-border': var(--el-disabled-border-base),
     'font-size': var(--el-font-size-base),
     'close-hover-color': var(--el-text-color-secondary),

@@ -130,7 +130,7 @@
 
     @include when(focus) {
       .#{$namespace}-radio__inner {
-        border-color: var(--el-radio-input-border-color-hover);
+        border-color: var(--el-color-primary);
       }
     }
   }
@@ -146,7 +146,7 @@
     box-sizing: border-box;
 
     &:hover {
-      border-color: var(--el-radio-input-border-color-hover);
+      border-color: var(--el-color-primary);
     }
 
     &::after {
@@ -178,7 +178,7 @@
   &:focus:not(.is-focus):not(:active):not(.is-disabled) {
     /*获得焦点时 样式提醒*/
     .#{$namespace}-radio__inner {
-      box-shadow: 0 0 2px 2px var(--el-radio-input-border-color-hover);
+      box-shadow: 0 0 2px 2px var(--el-color-primary);
     }
   }
 
