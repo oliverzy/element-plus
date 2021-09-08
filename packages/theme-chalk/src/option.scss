@@ -15,6 +15,7 @@
     color: map.get($--select-option, 'color');
     height: map.get($--select-option, 'height');
     line-height: map.get($--select-option, 'height');
+    border-radius: map.get($--select-option, 'border-radius');
     box-sizing: border-box;
     cursor: pointer;
 
@@ -33,8 +34,9 @@
     }
 
     &.selected {
-      color: map.get($--select-option, 'selected-font-color');
+      // color: map.get($--select-option, 'selected-font-color');
       font-weight: bold;
+      background-color: rgba(58, 100, 255, 0.1);
     }
   }
 }

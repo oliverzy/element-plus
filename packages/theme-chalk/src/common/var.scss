@@ -173,8 +173,8 @@ $--checkbox: () !default;
 $--checkbox: map.merge(
   (
     'font-size': 14px,
-    'font-weight': var(--el-font-weight-primary),
-    'font-color': var(--el-text-color-regular),
+    // 'font-weight': var(--el-font-weight-primary),
+    'font-color': rgba(0, 0, 0, 0.85),
     'input-height': 14px,
     'input-width': 14px,
     'border-radius': var(--el-border-radius-small),
@@ -212,10 +212,10 @@ $--radio: () !default;
 $--radio: map.merge(
   (
     'font-size': var(--el-font-size-base),
-    'font-color': var(--el-text-color-regular),
-    'font-weight': var(--el-font-weight-primary),
-    'input-height': 14px,
-    'input-width': 14px,
+    'font-color': rgba(0, 0, 0, 0.85),
+    // 'font-weight': var(--el-font-weight-primary),
+    'input-height': 16px,
+    'input-width': 16px,
     'input-border-radius': var(--el-border-radius-circle),
     'input-background-color': var(--el-color-white),
     'input-border': var(--el-border-base),
@@ -324,9 +324,10 @@ $--select-option: map.merge(
   (
     'color': var(--el-text-color-regular),
     'disabled-color': var(--el-text-color-placeholder),
-    'height': 34px,
+    'height': 32px,
     'hover-background': var(--el-background-color-base),
     'selected-font-color': var(--el-color-primary),
+    'border-radius': 8px,
   ),
   $--select-option
 );
@@ -348,8 +349,8 @@ $--select-dropdown: map.merge(
     'shadow': var(--el-box-shadow-light),
     'empty-color': var(--el-text-color-secondary),
     'max-height': 274px,
-    'padding': 6px 0,
-    'empty-padding': 10px 0,
+    'padding': 8px 4px,
+    'empty-padding': 68px 0 78px 0,
     'border': 1px solid var(--el-border-color-light),
   ),
   $--select-dropdown
@@ -440,13 +441,15 @@ $--input: () !default;
 $--input: map.merge(
   (
     'font-color': var(--el-text-color-regular),
-    'border': var(--el-border-base),
-    'border-color': var(--el-border-color-base),
+    // 'border': var(--el-border-base),
+    'border': 1px solid #d9d9d9,
+    // 'border-color': var(--el-border-color-base),
+    'border-color': #d9d9d9,
     'border-radius': var(--el-border-radius-base),
     'background-color': var(--el-color-white),
     'icon-color': var(--el-text-color-placeholder),
     'placeholder-color': var(--el-text-color-placeholder),
-    'hover-border': var(--el-border-color-hover),
+    'hover-border': var(--el-color-primary),
     'clear-hover-color': var(--el-text-color-secondary),
     'focus-border': var(--el-color-primary),
   ),
@@ -533,14 +536,14 @@ $--cascader: map.merge(
 $--button: () !default;
 $--button: map.merge(
   (
-    'font-weight': var(--el-font-weight-primary),
+    // 'font-weight': var(--el-font-weight-primary),
     'border-color': var(--el-border-color-base),
     'background-color': var(--el-color-white),
     'font-color': var(--el-text-color-regular),
     'disabled-font-color': var(--el-text-color-placeholder),
     'disabled-background-color': var(--el-color-white),
     'disabled-border-color': var(--el-border-color-light),
-    'divide-border-color': rgba($--color-white, 0.5),
+    'divide-border-color': rgba($--color-white, 0.5)
   ),
   $--button
 );

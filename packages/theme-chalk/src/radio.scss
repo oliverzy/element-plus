@@ -116,16 +116,16 @@
     @include when(checked) {
       .#{$namespace}-radio__inner {
         border-color: map.get($--radio-checked, 'input-border-color');
-        background: map.get($--radio-checked, 'icon-color');
+        // background: map.get($--radio-checked, 'icon-color');
 
         &::after {
           transform: translate(-50%, -50%) scale(1);
         }
       }
 
-      & + .#{$namespace}-radio__label {
-        color: map.get($--radio-checked, 'font-color');
-      }
+      // & + .#{$namespace}-radio__label {
+      //   color: map.get($--radio-checked, 'font-color');
+      // }
     }
 
     @include when(focus) {
@@ -150,10 +150,10 @@
     }
 
     &::after {
-      width: 4px;
-      height: 4px;
+      width: 8px;
+      height: 8px;
       border-radius: var(--el-radio-input-border-radius);
-      background-color: var(--el-color-white);
+      background-color: var(--el-color-primary);
       content: '';
       position: absolute;
       left: 50%;

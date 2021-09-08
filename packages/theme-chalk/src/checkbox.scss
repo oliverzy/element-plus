@@ -175,9 +175,9 @@ $--checkbox-bordered-input-width: map.merge(
         }
       }
 
-      & + .#{$namespace}-checkbox__label {
-        color: var(--el-checkbox-checked-font-color);
-      }
+      // & + .#{$namespace}-checkbox__label {
+      //   color: var(--el-checkbox-checked-font-color);
+      // }
     }
     @include when(focus) {
       /*focus时 视觉上区分*/

@@ -10,7 +10,7 @@
   @include e(separator) {
     margin: 0 9px;
     font-weight: bold;
-    color: var(--el-text-color-placeholder);
+    color: #888888;
 
     &[class*='icon'] {
       margin: 0 6px;
@@ -22,14 +22,14 @@
     float: left;
 
     @include e(inner) {
-      color: var(--el-text-color-regular);
+      color: #1e1e1e;
 
       &.is-link,
       & a {
-        font-weight: bold;
+        // font-weight: bold;
         text-decoration: none;
         transition: var(--el-transition-color);
-        color: var(--el-text-color-primary);
+        color: #888888;
 
         &:hover {
           color: var(--el-color-primary);

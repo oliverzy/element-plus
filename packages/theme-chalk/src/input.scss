@@ -118,7 +118,8 @@
     height: 100%;
     display: inline-flex;
     align-items: center;
-    color: var(--el-color-info);
+    // color: var(--el-color-info);
+    color: #ccc;
     font-size: 12px;
 
     .#{$namespace}-input__count-inner {
