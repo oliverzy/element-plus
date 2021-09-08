@@ -383,7 +383,7 @@ $--messagebox: map.merge(
     'title-color': var(--el-text-color-primary),
     'width': 420px,
     'border-radius': 4px,
-    'font-size': var(--el-font-size-large),
+    'font-size': var(--el-font-size-medium),
     'content-font-size': var(--el-font-size-base),
     'content-color': var(--el-text-color-regular),
     'error-font-size': 12px,
@@ -648,7 +648,7 @@ $--dialog: map.merge(
   (
     'background-color': var(--el-color-white),
     'box-shadow': 0 1px 3px rgba(0, 0, 0, 0.3),
-    'title-font-size': var(--el-font-size-large),
+    'title-font-size': var(--el-font-size-medium),
     'content-font-size': 14px,
     'font-line-height': var(--el-font-line-height-primary),
     'padding-primary': 20px,
