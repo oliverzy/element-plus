@@ -53,12 +53,16 @@
 
     .#{$namespace}-dialog__close {
       color: var(--el-color-info);
+      vertical-align: -3px;
+      font-size: 16px;
     }
 
     &:focus,
     &:hover {
       .#{$namespace}-dialog__close {
         color: var(--el-color-primary);
+        vertical-align: -3px;
+        font-size: 16px;
       }
     }
   }
@@ -67,6 +71,7 @@
     line-height: var(--el-dialog-font-line-height);
     font-size: var(--el-dialog-title-font-size);
     color: var(--el-text-color-primary);
+    font-weight: bold;
   }
 
   @include e(body) {

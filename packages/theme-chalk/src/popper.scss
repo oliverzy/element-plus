@@ -21,9 +21,9 @@
 
   @include when(dark) {
     color: var(--el-color-white);
-    background: var(--el-text-color-primary);
+    background: #4a4a4a;
     #{$arrow-selector}::before {
-      background: var(--el-text-color-primary);
+      background: #4a4a4a;
       right: 0;
     }
   }
