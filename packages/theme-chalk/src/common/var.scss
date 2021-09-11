@@ -898,11 +898,11 @@ $--slider: map.merge(
 $--menu: () !default;
 $--menu: map.merge(
   (
-    'item-font-size': var(--el-font-size-base),
+    'item-font-size': var(--el-font-size-meidum),
     'item-font-color': var(--el-text-color-primary),
-    'item-hover-fill': var(--el-color-primary-light-9),
+    'item-hover-fill': var(--el-color-primary),
     'background-color': var(--el-color-white),
-    'border-color': #e6e6e6,
+    'border-color': none,
   ),
   $--menu
 );

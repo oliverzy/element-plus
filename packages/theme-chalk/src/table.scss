@@ -391,6 +391,7 @@
 
   @include e((header-wrapper, footer-wrapper)) {
     overflow: hidden;
+    border-radius: 8px;
 
     & tbody td.#{$namespace}-table__cell {
       background-color: var(--el-table-row-hover-background-color);
