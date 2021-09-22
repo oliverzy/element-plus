@@ -9,7 +9,7 @@
   line-height: 56px;
   font-size: var(--el-menu-item-font-size);
   color: var(--el-menu-item-font-color);
-  padding: 0 20px;
+  padding: 0 16px;
   list-style: none;
   cursor: pointer;
   position: relative;
@@ -132,17 +132,18 @@
 
       & .#{$namespace}-menu-item.is-active,
       & .#{$namespace}-sub-menu.is-active > .#{$namespace}-sub-menu__title {
-        color: var(--el-text-color-primary);
+        color: var(--el-color-primary);
       }
     }
     & .#{$namespace}-menu-item:not(.is-disabled):hover,
     & .#{$namespace}-menu-item:not(.is-disabled):focus {
       outline: none;
-      color: var(--el-text-color-primary);
+      color: var(--el-color-primary);
     }
     & > .#{$namespace}-menu-item.is-active {
-      border-bottom: 2px solid var(--el-color-primary);
-      color: var(--el-text-color-primary);
+      // border-bottom: 2px solid var(--el-color-primary);
+      color: var(--el-color-primary);
+      font-weight: bold;
     }
   }
   @include m(collapse) {

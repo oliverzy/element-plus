@@ -5,7 +5,7 @@
   @include e(label) {
     &.#{$namespace}-descriptions__cell.is-bordered-label {
       font-weight: bold;
-      color: var(--el-text-color-secondary);
+      color: #2d2d2d;
       background: var(--el-descriptions-item-bordered-label-background);
     }
 
