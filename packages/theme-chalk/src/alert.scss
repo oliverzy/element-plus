@@ -59,6 +59,29 @@
     }
   }
 
+  // info特殊处理
+  @include m(info) {
+    --el-alert-background-color: #f2f7ff;
+
+    &.is-light {
+      background-color: var(--el-alert-background-color);
+      color: rgba(0, 0, 0, 0.85);
+
+      .#{$namespace}-alert__description {
+        color: rgba(0, 0, 0, 0.85);
+      }
+
+      i {
+        color: var(--el-color-primary);
+      }
+    }
+
+    &.is-dark {
+      background-color: var(--el-color-primary);
+      color: var(--el-color-white);
+    }
+  }
+
   @include e(content) {
     display: table-cell;
     padding: 0 8px;
